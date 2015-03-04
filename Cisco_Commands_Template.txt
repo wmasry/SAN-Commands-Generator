@@ -1,0 +1,237 @@
+"Linux1_50_P1"
+"Linux1_50_P2"
+"Linux2_51_P1"
+"Linux2_51_P2"
+"Unix1_52_P1"
+"Unix1_52_P2"
+"Unix2_53_P1"
+"Unix2_53_P2"
+"Windows1_48_P1"
+"Windows1_48_P2"
+"Windows2_49_P1"
+"Windows2_49_P2"
+"ESX1_46_P1"
+"ESX1_46_P2"
+"ESX2_47_P1"
+"ESX2_47_P2"
+
+---------------------------------------
+
+config t
+fcalias name CX4240_21_SPA vsan 3
+member pwwn 50:06:01:60:46:e0:0f:ba
+exit
+
+config t
+fcalias name CX4240_21_SPB vsan 3
+member pwwn 50:06:01:68:46:e0:0f:ba
+exit
+
+
+zone name L50P1_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  Linux1_50_P1
+exit
+
+zone name L50P2_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  Linux1_50_P2
+exit
+
+zone name L51P1_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  Linux2_51_P1
+exit
+
+zone name L51P2_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  Linux2_51_P2
+exit
+
+zone name U52P1_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  Unix1_52_P1
+exit
+
+zone name U52P2_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  Unix1_52_P2
+exit
+
+zone name U53P1_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  Unix2_53_P1
+exit
+
+zone name U53P2_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  Unix2_53_P2
+exit
+
+zone name W48P1_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  Windows1_48_P1
+exit
+
+zone name W48P2_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  Windows1_48_P2
+exit
+
+zone name W49P1_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  Windows2_49_P1
+exit
+
+zone name W49P2_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  Windows2_49_P2
+exit
+
+zone name E46P1_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  ESX1_46_P1
+exit
+
+zone name E46P2_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  ESX1_46_P2
+exit
+
+zone name E47P1_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  ESX2_47_P1
+exit
+
+zone name E47P2_13 vsan 3 
+member fcalias  CX4240_21_SPA
+member fcalias  ESX2_47_P2
+exit
+
+
+-------------------------
+--------------------------
+-----------------------------
+
+zone name L50P1_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  Linux1_50_P1
+exit
+
+zone name L50P2_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  Linux1_50_P2
+exit
+
+zone name L51P1_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  Linux2_51_P1
+exit
+
+zone name L51P2_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  Linux2_51_P2
+exit
+
+zone name U52P1_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  Unix1_52_P1
+exit
+
+zone name U52P2_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  Unix1_52_P2
+exit
+
+zone name U53P1_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  Unix2_53_P1
+exit
+
+zone name U53P2_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  Unix2_53_P2
+exit
+
+zone name W48P1_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  Windows1_48_P1
+exit
+
+zone name W48P2_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  Windows1_48_P2
+exit
+
+zone name W49P1_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  Windows2_49_P1
+exit
+
+zone name W49P2_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  Windows2_49_P2
+exit
+
+zone name E46P1_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  ESX1_46_P1
+exit
+
+zone name E46P2_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  ESX1_46_P2
+exit
+
+zone name E47P1_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  ESX2_47_P1
+exit
+
+zone name E47P2_14 vsan 3 
+member fcalias  CX4240_21_SPB
+member fcalias  ESX2_47_P2
+exit
+
+zoneset name main_config vsan 3 
+
+member L50P1_13  
+member L50P2_13   
+member L51P1_13   
+member L51P2_13   
+member U52P1_13   
+member U52P2_13   
+member U53P1_13   
+member U53P2_13   
+member W48P1_13   
+member W48P2_13   
+member W49P1_13 
+member W49P2_13  
+member E46P1_13  
+member E46P2_13  
+member E47P1_13  
+member E47P2_13 
+member L50P1_14  
+member L50P2_14  
+member L51P1_14  
+member L51P2_14  
+member U52P1_14  
+member U52P2_14  
+member U53P1_14  
+member U53P2_14  
+member W48P1_14  
+member W48P2_14  
+member W49P1_14  
+member W49P2_14  
+member E46P1_14  
+member E46P2_14  
+member E47P1_14  
+member E47P2_14  
+
+
+zoneset activate name main_config vsan 3 
+
+
+
+
+
