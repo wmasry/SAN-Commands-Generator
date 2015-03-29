@@ -4,12 +4,12 @@ The tool is used to automatically generate CLI configuration commands for both C
 #Description
 SAN Commands Generator helps systems administrators “SAN Administrators” to automatically generate CLI commands without having to write everything manually. It would help with the following. 
 
-•	Building SAN configuration from scratch-up in large scale datacenters.                                                      
-•	Gets you up up to speed in SAN configuration, in case your are ot very familiar with the commands.                          
+•	Building SAN configuration from scratch-up in large scale datacenters.
+•	Gets you up to speed while configuring SAN switches, in case your are not very familiar with the commands.           
 •	Avoiding some of the normal CLI human mistakes “e.g. leaving space at the end of the WWPN/aliases” 
 
 #Installation
-The tool was built with Java, it initially requires JVM to run, you just need to open the .jar file and the tool should open normally. You just need to make sure that all the requred libaries are associated, otherwise the tool would fail.
+The tool was built with Java, it initially requires JVM to run, you just need to open the .jar file and the tool should open normally. You just need to make sure that all the required libraries are associated, otherwise the tool would fail.
 
 #Usage Instructions
 The SAN administrator should fill in the required info in the excel templates provided with the package “Excel temples for both Brocade and Cisco”, then you will have to follow the below steps.
