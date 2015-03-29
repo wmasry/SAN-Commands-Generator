@@ -502,7 +502,7 @@ public class UI extends javax.swing.JFrame {
 
     private void jMenuItem1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem1MouseReleased
         // TODO add your handling code here:
-        String x = "Version: 1.0"+ "\n"+ "Developed by: Wael ElMasry"+"\n"+ "Contact: Wael.ElMasry@EMC.com" ; 
+        String x = "Version: 1.0"+ "\n"+ "Developed by: Wael ElMasry"+"\n"+ "Contact: Wael.ElMasry@live.com" ; 
         JOptionPane.showMessageDialog(null, x);
     }//GEN-LAST:event_jMenuItem1MouseReleased
 
