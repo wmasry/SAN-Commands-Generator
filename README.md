@@ -11,7 +11,7 @@ SAN Commands Generator helps systems administrators “SAN Administrators” to 
 • Avoiding some of the normal CLI human mistakes “e.g. leaving space at the end of the WWPN/aliases”. 
 
 #Installation
-The tool was built with Java, it initially requires JVM to run, you just need to open the .jar file and the tool should open normally. You just need to make sure that all the required libraries are associated, otherwise the tool would fail.
+The tool was built with Java, it initially requires JVM to run, you just need to open the .jar file and the tool should open normally. All the required libraries are associated, and should not be removed, otherwise the tool will fail.
 
 #Usage Instructions
 The SAN administrator should fill in the required info in the excel templates provided with the package “Excel temples for both Brocade and Cisco”, then you will have to follow the below steps.
